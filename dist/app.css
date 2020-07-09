@@ -13,9 +13,23 @@
   color: #5d422f;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
 /* ________ HEADER ________ */
 
+header {
+  background-color: yellow;
+}
+
 /* NAVBAR */
+
+nav {
+  background-color: greenyellow;
+  height: 70px;
+}
 
 /* ________ MAIN ________ */
 
