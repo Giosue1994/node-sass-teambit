@@ -22,24 +22,43 @@
 
 header {
   background-color: yellow;
+  /* NAVBAR */
 }
 
-/* NAVBAR */
-
-nav {
+header nav {
   background-color: greenyellow;
   height: 70px;
 }
 
 /* ________ MAIN ________ */
 
+section {
+  height: 300px;
+}
+
 /* SEZIONE JUMBOTRON */
+
+.jumbotron {
+  background-color: coral;
+}
 
 /* SEZIONE SOLUTIONS */
 
+.solutions {
+  background-color: brown;
+}
+
 /* SEZIONE TUTORIALS */
 
+.tutorials {
+  background-color: darkcyan;
+}
+
 /* SEZIONE TEAMBIT */
+
+.teambit {
+  background-color: olive;
+}
 
 /* ________ FOOTER ________ */
 
