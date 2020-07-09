@@ -8,10 +8,14 @@
 /* ________ REGOLE GENERALI ________ */
 .wrapper {
   font-family: $font_page;
-  color: $color_page;
+  color: $color_font_page;
 }
 
 .container {
   width: 80%;
   margin: auto;
+}
+
+ul {
+  list-style-type: none;
 }

@@ -18,19 +18,49 @@
   margin: auto;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* ________ HEADER ________ */
 
 header {
-  background-color: yellow;
   /* NAVBAR */
 }
 
 header nav {
-  background-color: greenyellow;
   height: 70px;
+  border-bottom: 1px solid #5d422f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+header nav .list-menu li {
+  display: inline-block;
+  margin-left: 30px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+header nav .list-menu .btn-nav {
+  border: 1px solid #1a4892;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  color: #1a4892;
+}
+
+header nav .list-menu .btn-nav img {
+  width: 18px;
+  vertical-align: text-bottom;
+  margin-right: 5px;
 }
 
 /* ________ MAIN ________ */
+
+/* SECTION */
 
 section {
   height: 300px;

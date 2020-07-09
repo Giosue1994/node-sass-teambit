@@ -1,11 +1,32 @@
 /* ________ HEADER ________ */
 header {
-  background-color: yellow; // TODO: modificare o cancellare
 
   /* NAVBAR */
   nav {
-    background-color: greenyellow; // TODO: modificare o cancellare
     height: 70px;
+    border-bottom: 1px solid $color_font_page;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: $font_size;
+
+    .list-menu {
+      li {
+        display: inline-block;
+        margin-left: 30px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      .btn-nav {
+        @import 'partials/_mixins';
+        @include general_btn;
+        color: $btn_color;
+
+        img {
+          @include general_btn_img;
+        }
+      }
+    }
   }
-  
+
 }
