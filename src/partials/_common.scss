@@ -21,6 +21,26 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: $line_height_text_page;
 }
 
+.title {
+
+  h1 {
+    font-size: 45px;
+    line-height: 1.5;
+  }
+  p {
+    padding: 50px 0 30px;
+  }
+  a {
+    color: $color_font_page;
+    text-decoration: none;
+
+    &:hover {
+      color: $btn_color;
+      text-decoration: underline;
+    }
+  }
+}
+
 ul {
   list-style-type: none;
 }

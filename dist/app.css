@@ -21,6 +21,22 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.5;
 }
 
+.title h1 {
+  font-size: 45px;
+  line-height: 1.5;
+}
+.title p {
+  padding: 50px 0 30px;
+}
+.title a {
+  color: #5d422f;
+  text-decoration: none;
+}
+.title a:hover {
+  color: #1a4892;
+  text-decoration: underline;
+}
+
 ul {
   list-style-type: none;
 }
@@ -96,55 +112,10 @@ section {
   padding: 70px 0;
 }
 
-/* SEZIONE SOLUTIONS */
-#solutions {
-  background-color: #ffe6cf;
-  text-align: center;
-}
-#solutions .row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-#solutions .row:first-child {
-  border-bottom: 1px solid #5d422f;
-  margin-bottom: 120px;
-}
-#solutions .row h3 {
-  width: 100%;
-  padding: 0 200px;
-}
-#solutions .row .col {
-  font-size: 14px;
-  width: calc(100% / 3);
-  height: 180px;
-  padding-top: 40px;
-}
-#solutions .row .col img {
-  height: 100%;
-  padding-bottom: 30px;
-}
-#solutions .row .col-rabbit {
-  width: 100%;
-  padding: 130px 0;
-}
-#solutions .row .col-rabbit img {
-  width: 300px;
-}
-
-/* SEZIONE TUTORIALS */
-#tutorials {
-  background-color: darkcyan;
-  height: 300px;
-}
-
-/* SEZIONE TEAMBIT */
-#teambit {
-  background-color: olive;
-  height: 300px;
-}
-
 /* SEZIONE JUMBOTRON */
+#jumbotron {
+  background-color: white;
+}
 #jumbotron .container {
   display: flex;
   justify-content: space-between;
@@ -152,23 +123,8 @@ section {
 #jumbotron .title {
   width: 100%;
 }
-#jumbotron .title h1 {
-  font-size: 45px;
-  line-height: 1.5;
-}
-#jumbotron .title p {
-  padding-top: 5px;
-}
 #jumbotron .title .sign-with {
   padding: 55px 0 0;
-}
-#jumbotron .title a {
-  color: #5d422f;
-  text-decoration: none;
-}
-#jumbotron .title a:hover {
-  color: #1a4892;
-  text-decoration: underline;
 }
 #jumbotron .title .btn {
   border: 1px solid #1a4892;
@@ -196,6 +152,69 @@ section {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* SEZIONE BEFORE-AFTER */
+#before-after {
+  background-color: #ffe6cf;
+  text-align: center;
+}
+#before-after .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#before-after .row:first-child {
+  border-bottom: 1px solid #5d422f;
+  margin-bottom: 120px;
+}
+#before-after .row h3 {
+  width: 100%;
+  padding: 0 200px;
+}
+#before-after .row .col {
+  font-size: 14px;
+  width: calc(100% / 3);
+  height: 180px;
+  padding-top: 40px;
+}
+#before-after .row .col img {
+  height: 100%;
+  padding-bottom: 30px;
+}
+#before-after .row .col-rabbit {
+  width: 100%;
+  padding: 130px 0;
+}
+#before-after .row .col-rabbit img {
+  width: 300px;
+}
+
+/* SEZIONE SOLUTIONS */
+#solutions {
+  background-color: white;
+}
+#solutions .row {
+  display: flex;
+}
+#solutions .row.surveys, #solutions .row.praise {
+  flex-direction: row-reverse;
+}
+#solutions .row .screen img {
+  height: 380px;
+}
+#solutions .row .title {
+  width: 25%;
+}
+#solutions .row .title img {
+  padding: 40px 0;
+  height: 350px;
+}
+
+/* SEZIONE TEAMBIT */
+#teambit {
+  background-color: olive;
+  height: 300px;
 }
 
 /* ________ FOOTER ________ */

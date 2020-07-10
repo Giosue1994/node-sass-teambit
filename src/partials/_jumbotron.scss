@@ -1,5 +1,6 @@
 /* SEZIONE JUMBOTRON */
 #jumbotron {
+  background-color: $primary_color;
 
   .container {
     display: flex;
@@ -10,26 +11,8 @@
   .title {
     width: 100%;
 
-    h1 {
-      font-size: 45px;
-      line-height: 1.5;
-    }
-    p {
-      padding-top: 5px;
-    }
-
     .sign-with {
       padding: 55px 0 0;
-    }
-
-    a {
-      color: $color_font_page;
-      text-decoration: none;
-
-      &:hover {
-        color: $btn_color;
-        text-decoration: underline;
-      }
     }
 
     .btn {

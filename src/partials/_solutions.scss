@@ -1,0 +1,28 @@
+/* SEZIONE SOLUTIONS */
+#solutions {
+  background-color: $primary_color;
+
+  .row {
+    display: flex;
+    
+    &.surveys,
+    &.praise {
+      flex-direction: row-reverse;
+    }
+    .screen {
+
+      img {
+        height: 380px;
+      }
+    }
+
+    .title {
+      width: 25%;
+
+      img {
+        padding: 40px 0;
+        height: 350px;
+      }
+    }
+  }
+}

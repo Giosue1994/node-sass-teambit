@@ -1,0 +1,36 @@
+/* SEZIONE BEFORE-AFTER */
+#before-after {
+  background-color: $secondary_color;
+  text-align: center;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &:first-child {
+      border-bottom: 1px solid $color_font_page;
+      margin-bottom: 120px;
+    }
+
+    h3 {
+      width: 100%;
+      padding: 0 200px;
+    }
+    .col {
+      @include general_col;
+
+      img {
+        @include general_col_img;
+      }
+    }
+    .col-rabbit {
+      width: 100%;
+      padding: 130px 0;
+
+      img {
+        width: 300px;
+      }
+    }
+  }
+}
