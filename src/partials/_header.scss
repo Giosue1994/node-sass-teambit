@@ -8,7 +8,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: $font_size;
+    font-size: $font_size_small;
 
     .list-menu {
       li {
@@ -17,10 +17,41 @@ header {
         cursor: pointer;
         font-weight: bold;
       }
+      .drop-solutions {
+        position: relative;
+
+        /* DROPDOWN */
+        .dropdown {  // TODO: mostrare dropbox con javascript
+          position: absolute;
+          right: 0;
+          background-color: white;
+          border: 1px solid lightgray;
+          padding: 10px 0;
+          display: none;
+
+          li {
+            padding: 10px 15px;
+            margin: 0;
+
+            &:hover {
+              color: $btn_color;
+            }
+          }
+        }
+
+        i {
+          font-size: 20px;
+          vertical-align: middle;
+        }
+      }
       .btn-nav {
-        @import 'partials/_mixins';
         @include general_btn;
         color: $btn_color;
+
+        &:hover {
+          background-color: $btn_color;
+          color: white;
+        }
 
         img {
           @include general_btn_img;

@@ -1,5 +1,4 @@
 /* ________ RESET ________ */
-
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,6 @@
 }
 
 /* ________ REGOLE GENERALI ________ */
-
 .wrapper {
   font-family: "Roboto", sans-serif;
   color: #5d422f;
@@ -23,11 +21,9 @@ ul {
 }
 
 /* ________ HEADER ________ */
-
 header {
   /* NAVBAR */
 }
-
 header nav {
   height: 70px;
   border-bottom: 1px solid #5d422f;
@@ -36,22 +32,47 @@ header nav {
   justify-content: space-between;
   font-size: 14px;
 }
-
 header nav .list-menu li {
   display: inline-block;
   margin-left: 30px;
   cursor: pointer;
   font-weight: bold;
 }
-
+header nav .list-menu .drop-solutions {
+  position: relative;
+  /* DROPDOWN */
+}
+header nav .list-menu .drop-solutions .dropdown {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 10px 0;
+  display: none;
+}
+header nav .list-menu .drop-solutions .dropdown li {
+  padding: 10px 15px;
+  margin: 0;
+}
+header nav .list-menu .drop-solutions .dropdown li:hover {
+  color: #1a4892;
+}
+header nav .list-menu .drop-solutions i {
+  font-size: 20px;
+  vertical-align: middle;
+}
 header nav .list-menu .btn-nav {
   border: 1px solid #1a4892;
   border-radius: 5px;
   padding: 10px;
   font-size: 14px;
+  transition: 0.3s ease;
   color: #1a4892;
 }
-
+header nav .list-menu .btn-nav:hover {
+  background-color: #1a4892;
+  color: white;
+}
 header nav .list-menu .btn-nav img {
   width: 18px;
   vertical-align: text-bottom;
@@ -59,41 +80,33 @@ header nav .list-menu .btn-nav img {
 }
 
 /* ________ MAIN ________ */
-
 /* SECTION */
-
 section {
   height: 300px;
 }
 
 /* SEZIONE JUMBOTRON */
-
 .jumbotron {
   background-color: coral;
 }
 
 /* SEZIONE SOLUTIONS */
-
 .solutions {
   background-color: brown;
 }
 
 /* SEZIONE TUTORIALS */
-
 .tutorials {
   background-color: darkcyan;
 }
 
 /* SEZIONE TEAMBIT */
-
 .teambit {
   background-color: olive;
 }
 
 /* ________ FOOTER ________ */
-
 footer .container {
   height: 300px;
   background-color: darkorchid;
 }
-
