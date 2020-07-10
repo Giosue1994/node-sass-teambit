@@ -24,7 +24,7 @@ header {
         .dropdown {  // TODO: mostrare dropbox con javascript
           position: absolute;
           right: 0;
-          background-color: white;
+          background-color: $primary_color;
           border: 1px solid lightgray;
           padding: 10px 0;
           display: none;
@@ -50,7 +50,7 @@ header {
 
         &:hover {
           background-color: $btn_color;
-          color: white;
+          color: $primary_color;
         }
 
         img {

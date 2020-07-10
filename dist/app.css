@@ -7,6 +7,7 @@
 
 /* ________ REGOLE GENERALI ________ */
 .wrapper {
+  font-size: 22px;
   font-family: "Roboto", sans-serif;
   color: #5d422f;
 }
@@ -18,6 +19,10 @@
 
 ul {
   list-style-type: none;
+}
+
+.text-small {
+  font-size: 14px;
 }
 
 /* ________ HEADER ________ */
@@ -66,6 +71,7 @@ header nav .list-menu .btn-nav {
   border-radius: 5px;
   padding: 10px;
   font-size: 14px;
+  font-weight: bold;
   transition: 0.3s ease;
   color: #1a4892;
 }
@@ -82,27 +88,75 @@ header nav .list-menu .btn-nav img {
 /* ________ MAIN ________ */
 /* SECTION */
 section {
-  height: 300px;
+  display: flex;
+  padding: 70px 0;
 }
 
 /* SEZIONE JUMBOTRON */
-.jumbotron {
-  background-color: coral;
+.jumbotron .title {
+  width: calc(100% / 2);
+}
+.jumbotron .title h1 {
+  font-size: 50px;
+  line-height: 1.5;
+}
+.jumbotron .title p {
+  padding-top: 5px;
+}
+.jumbotron .title .sign-with {
+  padding: 55px 0 0;
+}
+.jumbotron .title a {
+  color: #5d422f;
+  text-decoration: none;
+}
+.jumbotron .title a:hover {
+  color: #1a4892;
+  text-decoration: underline;
+}
+.jumbotron .title .btn {
+  border: 1px solid #1a4892;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  background-color: #1a4892;
+  color: white;
+}
+.jumbotron .title .btn:hover {
+  background-color: white;
+  color: #1a4892;
+}
+.jumbotron .title .btn img {
+  width: 18px;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+.jumbotron .background {
+  width: calc(100% / 2);
+  background-image: url("../dist/img/illustration-main.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* SEZIONE SOLUTIONS */
 .solutions {
   background-color: brown;
+  height: 300px;
 }
 
 /* SEZIONE TUTORIALS */
 .tutorials {
   background-color: darkcyan;
+  height: 300px;
 }
 
 /* SEZIONE TEAMBIT */
 .teambit {
   background-color: olive;
+  height: 300px;
 }
 
 /* ________ FOOTER ________ */

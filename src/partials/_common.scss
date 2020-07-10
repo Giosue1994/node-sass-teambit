@@ -7,6 +7,7 @@
 
 /* ________ REGOLE GENERALI ________ */
 .wrapper {
+  font-size: $font_size_medium;
   font-family: $font_page;
   color: $color_font_page;
 }
@@ -18,4 +19,8 @@
 
 ul {
   list-style-type: none;
+}
+
+.text-small {
+  font-size: $font_size_small;
 }
