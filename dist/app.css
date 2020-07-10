@@ -17,6 +17,10 @@
   margin: auto;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.5;
+}
+
 ul {
   list-style-type: none;
 }
@@ -40,8 +44,8 @@ header nav {
 header nav .list-menu li {
   display: inline-block;
   margin-left: 30px;
-  cursor: pointer;
   font-weight: bold;
+  cursor: pointer;
 }
 header nav .list-menu .drop-solutions {
   position: relative;
@@ -73,6 +77,7 @@ header nav .list-menu .btn-nav {
   font-size: 14px;
   font-weight: bold;
   transition: 0.3s ease;
+  cursor: pointer;
   color: #1a4892;
 }
 header nav .list-menu .btn-nav:hover {
@@ -88,79 +93,113 @@ header nav .list-menu .btn-nav img {
 /* ________ MAIN ________ */
 /* SECTION */
 section {
-  display: flex;
   padding: 70px 0;
 }
 
-/* SEZIONE JUMBOTRON */
-.jumbotron .title {
-  width: calc(100% / 2);
+/* SEZIONE SOLUTIONS */
+#solutions {
+  background-color: #ffe6cf;
+  text-align: center;
 }
-.jumbotron .title h1 {
-  font-size: 50px;
+#solutions .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#solutions .row:first-child {
+  border-bottom: 1px solid #5d422f;
+  margin-bottom: 120px;
+}
+#solutions .row h3 {
+  width: 100%;
+  padding: 0 200px;
+}
+#solutions .row .col {
+  font-size: 14px;
+  width: calc(100% / 3);
+  height: 180px;
+  padding-top: 40px;
+}
+#solutions .row .col img {
+  height: 100%;
+  padding-bottom: 30px;
+}
+#solutions .row .col-rabbit {
+  width: 100%;
+  padding: 130px 0;
+}
+#solutions .row .col-rabbit img {
+  width: 300px;
+}
+
+/* SEZIONE TUTORIALS */
+#tutorials {
+  background-color: darkcyan;
+  height: 300px;
+}
+
+/* SEZIONE TEAMBIT */
+#teambit {
+  background-color: olive;
+  height: 300px;
+}
+
+/* SEZIONE JUMBOTRON */
+#jumbotron .container {
+  display: flex;
+  justify-content: space-between;
+}
+#jumbotron .title {
+  width: 100%;
+}
+#jumbotron .title h1 {
+  font-size: 45px;
   line-height: 1.5;
 }
-.jumbotron .title p {
+#jumbotron .title p {
   padding-top: 5px;
 }
-.jumbotron .title .sign-with {
+#jumbotron .title .sign-with {
   padding: 55px 0 0;
 }
-.jumbotron .title a {
+#jumbotron .title a {
   color: #5d422f;
   text-decoration: none;
 }
-.jumbotron .title a:hover {
+#jumbotron .title a:hover {
   color: #1a4892;
   text-decoration: underline;
 }
-.jumbotron .title .btn {
+#jumbotron .title .btn {
   border: 1px solid #1a4892;
   border-radius: 5px;
   padding: 10px;
   font-size: 14px;
   font-weight: bold;
   transition: 0.3s ease;
+  cursor: pointer;
   background-color: #1a4892;
   color: white;
 }
-.jumbotron .title .btn:hover {
+#jumbotron .title .btn:hover {
   background-color: white;
   color: #1a4892;
 }
-.jumbotron .title .btn img {
+#jumbotron .title .btn img {
   width: 18px;
   vertical-align: text-bottom;
   margin-right: 5px;
 }
-.jumbotron .background {
-  width: calc(100% / 2);
+#jumbotron .background {
+  width: 100%;
   background-image: url("../dist/img/illustration-main.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* SEZIONE SOLUTIONS */
-.solutions {
-  background-color: brown;
-  height: 300px;
-}
-
-/* SEZIONE TUTORIALS */
-.tutorials {
-  background-color: darkcyan;
-  height: 300px;
-}
-
-/* SEZIONE TEAMBIT */
-.teambit {
-  background-color: olive;
-  height: 300px;
-}
-
 /* ________ FOOTER ________ */
-footer .container {
+footer {
   height: 300px;
   background-color: darkorchid;
 }

@@ -1,0 +1,59 @@
+/* SEZIONE JUMBOTRON */
+#jumbotron {
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // Title
+  .title {
+    width: 100%;
+
+    h1 {
+      font-size: 45px;
+      line-height: 1.5;
+    }
+    p {
+      padding-top: 5px;
+    }
+
+    .sign-with {
+      padding: 55px 0 0;
+    }
+
+    a {
+      color: $color_font_page;
+      text-decoration: none;
+
+      &:hover {
+        color: $btn_color;
+        text-decoration: underline;
+      }
+    }
+
+    .btn {
+      @include general_btn;
+      background-color: $btn_color;
+      color: $primary_color;
+
+      &:hover {
+        background-color: $primary_color;
+        color: $btn_color;
+      }
+
+      img {
+        @include general_btn_img;
+      }
+    }
+  }
+
+  // Background
+  .background {
+    width: 100%;
+    background-image: url('../dist/img/illustration-main.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
