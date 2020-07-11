@@ -3,11 +3,10 @@ header {
 
   /* NAVBAR */
   nav {
+    @include flex_between;
+    align-items: center;
     height: 70px;
     border-bottom: 1px solid $color_font_page;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     font-size: $font_size_small;
 
     .list-menu {

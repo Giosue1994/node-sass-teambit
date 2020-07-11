@@ -4,8 +4,7 @@
   text-align: center;
 
   .row {
-    display: flex;
-    justify-content: space-between;
+    @include flex_between;
     flex-wrap: wrap;
 
     &:first-child {

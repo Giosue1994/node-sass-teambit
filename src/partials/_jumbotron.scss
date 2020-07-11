@@ -3,31 +3,15 @@
   background-color: $primary_color;
 
   .container {
-    display: flex;
-    justify-content: space-between;
+    @include flex_between;
   }
 
   // Title
   .title {
     width: 100%;
 
-    .sign-with {
-      padding: 55px 0 0;
-    }
-
-    .btn {
-      @include general_btn;
-      background-color: $btn_color;
-      color: $primary_color;
-
-      &:hover {
-        background-color: $primary_color;
-        color: $btn_color;
-      }
-
-      img {
-        @include general_btn_img;
-      }
+    p {
+      padding: 0;
     }
   }
 

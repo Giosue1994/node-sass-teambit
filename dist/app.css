@@ -21,22 +21,6 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.5;
 }
 
-.title h1 {
-  font-size: 45px;
-  line-height: 1.5;
-}
-.title p {
-  padding: 50px 0 30px;
-}
-.title a {
-  color: #5d422f;
-  text-decoration: none;
-}
-.title a:hover {
-  color: #1a4892;
-  text-decoration: underline;
-}
-
 ul {
   list-style-type: none;
 }
@@ -50,11 +34,11 @@ header {
   /* NAVBAR */
 }
 header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 70px;
   border-bottom: 1px solid #5d422f;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   font-size: 14px;
 }
 header nav .list-menu li {
@@ -112,6 +96,46 @@ section {
   padding: 70px 0;
 }
 
+.title h2 {
+  font-size: 45px;
+  line-height: 1.5;
+}
+.title p {
+  padding: 50px 0 40px;
+}
+.title a {
+  color: #5d422f;
+  text-decoration: none;
+  display: block;
+}
+.title a:hover {
+  color: #1a4892;
+  text-decoration: underline;
+}
+.title .sign-with {
+  padding: 55px 0 30px;
+}
+.title .btn {
+  border: 1px solid #1a4892;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  cursor: pointer;
+  background-color: #1a4892;
+  color: white;
+}
+.title .btn:hover {
+  background-color: white;
+  color: #1a4892;
+}
+.title .btn img {
+  width: 18px;
+  vertical-align: text-bottom;
+  margin-right: 5px;
+}
+
 /* SEZIONE JUMBOTRON */
 #jumbotron {
   background-color: white;
@@ -123,28 +147,8 @@ section {
 #jumbotron .title {
   width: 100%;
 }
-#jumbotron .title .sign-with {
-  padding: 55px 0 0;
-}
-#jumbotron .title .btn {
-  border: 1px solid #1a4892;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 14px;
-  font-weight: bold;
-  transition: 0.3s ease;
-  cursor: pointer;
-  background-color: #1a4892;
-  color: white;
-}
-#jumbotron .title .btn:hover {
-  background-color: white;
-  color: #1a4892;
-}
-#jumbotron .title .btn img {
-  width: 18px;
-  vertical-align: text-bottom;
-  margin-right: 5px;
+#jumbotron .title p {
+  padding: 0;
 }
 #jumbotron .background {
   width: 100%;
@@ -213,8 +217,36 @@ section {
 
 /* SEZIONE TEAMBIT */
 #teambit {
-  background-color: olive;
-  height: 300px;
+  background-color: #ffe6cf;
+}
+#teambit .container {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+}
+#teambit .founders {
+  background-color: white;
+  border: 1px solid #1a4892;
+  border-radius: 10px;
+  text-align: left;
+  margin-top: 50px;
+  padding: 20px;
+}
+#teambit .founders p {
+  padding: 0;
+}
+#teambit .founders .credits {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+#teambit .founders .credits img {
+  width: 50px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+#teambit .founders .credits span:first-child {
+  color: #1a4892;
 }
 
 /* ________ FOOTER ________ */

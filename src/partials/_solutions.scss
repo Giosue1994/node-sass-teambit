@@ -4,11 +4,12 @@
 
   .row {
     display: flex;
-    
+
     &.surveys,
     &.praise {
       flex-direction: row-reverse;
     }
+    
     .screen {
 
       img {
