@@ -1,6 +1,42 @@
 /* ________ FOOTER ________ */
 footer {
-  height: 300px;  // TODO: modificare o cancellare
-  background-color: darkorchid; // TODO: modificare o cancellare
+  background-color: $primary_color;
+  padding: $padding_section;
 
+  .container {
+    display: flex;
+  }
+
+  .col{
+    font-weight: bold;
+    flex-basis: calc(100% / 6);
+
+    &:first-child {
+      display: flex;
+      padding-right: 40px;
+
+      img {
+        width: 140px;
+        margin-right: 20px;
+        align-self: flex-start;
+      }
+    }
+
+
+    p {
+      span {
+        color: $btn_color;
+      }
+    }
+
+    li {
+      font-size: $font_size_small;
+      margin-bottom: 20px;
+      cursor: pointer;
+
+      &:hover {
+        color: $btn_color;
+      }
+    }
+  }
 }

@@ -17,10 +17,10 @@
       padding: 0 200px;
     }
     .col {
-      @include general_col;
+      @include section_col;
 
       img {
-        @include general_col_img;
+        @include section_col_img;
       }
     }
     .col-rabbit {

@@ -6,6 +6,7 @@
   font-size: $font_size_small;
   font-weight: bold;
   transition: 0.3s ease;
+  display: inline-block;
   cursor: pointer;
 }
 
@@ -16,14 +17,14 @@
 }
 
 // stili colonne
-@mixin general_col {
+@mixin section_col {
   font-size: $font_size_small;
   width: calc(100% / 3);
   height: 180px;
   padding-top: 40px;
 }
 
-@mixin general_col_img {
+@mixin section_col_img {
   height: 100%;
   padding-bottom: 30px;
 }
