@@ -33,6 +33,7 @@ header {
       .btn-nav {
         @include general_btn;
         color: $btn_color;
+        background-color: $primary_color;
 
         &:hover {
           background-color: $btn_color;
@@ -47,8 +48,42 @@ header {
 
     /* burger menu */
     .burger-menu {
+      position: relative;
+      right: 13px;
+
       i {
         font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        &:active {
+          color: $btn_color;
+        }
+      }
+    }
+
+    .slide-menu {
+      background-color: $primary_color;
+      width: 90%;
+      padding-top: 30px;
+      position: absolute;
+      top: 70px;
+
+      .list-menu {
+        @include flex_column;
+        padding: 0 20px;
+
+        li {
+          margin-bottom: 20px;
+          margin-left: 0;
+
+          &.btn-nav {
+            margin-top: 10px;
+          }
+        }
       }
     }
 

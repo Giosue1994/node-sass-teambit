@@ -39,6 +39,12 @@ ul {
 
 /* MEDIA QUERY */
 @media screen and (max-width: 900px) {
+  /* HEADER */
+  header {
+    .container {
+      width: 90%;
+    }
+  }
   /* NAVBAR */
   .menu {
     display: none;
@@ -56,7 +62,7 @@ ul {
   /* JUMBOTRON */
   #jumbotron {
     .container {
-      flex-direction: column;
+      @include flex_column;
 
       .background {
         height: 300px;
@@ -67,7 +73,7 @@ ul {
   /* BEFORE-AFTER */
   #before-after {
     .row {
-      flex-direction: column;
+      @include flex_column;
       align-items: center;
 
       .col {
@@ -80,8 +86,7 @@ ul {
   #solutions {
 
     .row {
-      display: flex;
-      flex-direction: column;
+      @include flex_column;
 
       .screen {
 
