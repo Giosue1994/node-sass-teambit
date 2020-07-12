@@ -2,27 +2,29 @@
 #solutions {
   background-color: $primary_color;
 
-  .row {
-    display: flex;
+  @media screen and (min-width: 901px) {
+    .row {
+      display: flex;
 
-    &.surveys,
-    &.praise {
-      flex-direction: row-reverse;
-    }
-    
-    .screen {
-
-      img {
-        height: 380px;
+      &.surveys,
+      &.praise {
+        flex-direction: row-reverse;
       }
-    }
 
-    .title {
-      width: 25%;
+      .screen {
 
-      img {
-        padding: 40px 0;
-        height: 350px;
+        img {
+          height: 380px;
+        }
+      }
+
+      .title {
+        width: 25%;
+
+        img {
+          padding: 40px 0;
+          width: 100%;
+        }
       }
     }
   }

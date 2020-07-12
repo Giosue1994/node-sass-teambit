@@ -9,34 +9,21 @@ header {
     border-bottom: 1px solid $color_font_page;
     font-size: $font_size_small;
 
+    /* Menu */
     .list-menu {
       li {
         display: inline-block;
         margin-left: 30px;
         font-weight: bold;
         cursor: pointer;
+
+        &:hover {
+          color: $btn_color;
+        }
       }
+
       .drop-solutions {
         position: relative;
-
-        /* DROPDOWN */
-        .dropdown {  // TODO: mostrare dropbox con javascript
-          position: absolute;
-          right: 0;
-          background-color: $primary_color;
-          border: 1px solid lightgray;
-          padding: 10px 0;
-          display: none;
-
-          li {
-            padding: 10px 15px;
-            margin: 0;
-
-            &:hover {
-              color: $btn_color;
-            }
-          }
-        }
 
         i {
           font-size: 20px;
@@ -57,6 +44,37 @@ header {
         }
       }
     }
+
+    /* burger menu */
+    .burger-menu {
+      i {
+        font-size: 30px;
+      }
+    }
+
+    /* DROPDOWN */
+    .dropdown {  // TODO: mostrare dropbox con javascript
+      position: absolute;
+      right: 0;
+      background-color: $primary_color;
+      border: 1px solid lightgray;
+      padding: 10px 0;
+      display: none;
+
+      &.visible {
+        display: block;
+      }
+
+      li {
+        padding: 10px 15px;
+        margin: 0;
+
+        &:hover {
+          color: $btn_color;
+        }
+      }
+    }
+
   }
 
 }

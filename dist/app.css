@@ -29,6 +29,75 @@ ul {
   font-size: 14px;
 }
 
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 900px) {
+  /* NAVBAR */
+  .menu {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  /* SECTION */
+  section {
+    text-align: center;
+  }
+
+  /* JUMBOTRON */
+  #jumbotron .container {
+    flex-direction: column;
+  }
+  #jumbotron .container .background {
+    height: 300px;
+  }
+
+  /* BEFORE-AFTER */
+  #before-after .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  #before-after .row .col {
+    margin: 50px 0;
+  }
+
+  /* SOLUTIONS */
+  #solutions .row {
+    display: flex;
+    flex-direction: column;
+  }
+  #solutions .row .screen img {
+    width: 100%;
+  }
+  #solutions .row .title {
+    width: 100%;
+  }
+  #solutions .row .title img {
+    padding: 40px 0;
+    width: 60%;
+  }
+
+  /* FOOTER */
+  footer .container {
+    flex-wrap: wrap;
+  }
+  footer .col {
+    flex-basis: calc(100% / 3);
+  }
+  footer .col:first-child {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+}
 /* ________ HEADER ________ */
 header {
   /* NAVBAR */
@@ -40,6 +109,9 @@ header nav {
   height: 70px;
   border-bottom: 1px solid #5d422f;
   font-size: 14px;
+  /* Menu */
+  /* burger menu */
+  /* DROPDOWN */
 }
 header nav .list-menu li {
   display: inline-block;
@@ -47,24 +119,11 @@ header nav .list-menu li {
   font-weight: bold;
   cursor: pointer;
 }
+header nav .list-menu li:hover {
+  color: #1a4892;
+}
 header nav .list-menu .drop-solutions {
   position: relative;
-  /* DROPDOWN */
-}
-header nav .list-menu .drop-solutions .dropdown {
-  position: absolute;
-  right: 0;
-  background-color: white;
-  border: 1px solid lightgray;
-  padding: 10px 0;
-  display: none;
-}
-header nav .list-menu .drop-solutions .dropdown li {
-  padding: 10px 15px;
-  margin: 0;
-}
-header nav .list-menu .drop-solutions .dropdown li:hover {
-  color: #1a4892;
 }
 header nav .list-menu .drop-solutions i {
   font-size: 20px;
@@ -89,6 +148,27 @@ header nav .list-menu .btn-nav img {
   width: 18px;
   vertical-align: text-bottom;
   margin-right: 5px;
+}
+header nav .burger-menu i {
+  font-size: 30px;
+}
+header nav .dropdown {
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border: 1px solid lightgray;
+  padding: 10px 0;
+  display: none;
+}
+header nav .dropdown.visible {
+  display: block;
+}
+header nav .dropdown li {
+  padding: 10px 15px;
+  margin: 0;
+}
+header nav .dropdown li:hover {
+  color: #1a4892;
 }
 
 /* ________ MAIN ________ */
@@ -176,7 +256,6 @@ section {
 }
 #before-after .row h3 {
   width: 100%;
-  padding: 0 200px;
 }
 #before-after .row .col {
   font-size: 14px;
@@ -200,21 +279,23 @@ section {
 #solutions {
   background-color: white;
 }
-#solutions .row {
-  display: flex;
-}
-#solutions .row.surveys, #solutions .row.praise {
-  flex-direction: row-reverse;
-}
-#solutions .row .screen img {
-  height: 380px;
-}
-#solutions .row .title {
-  width: 25%;
-}
-#solutions .row .title img {
-  padding: 40px 0;
-  height: 350px;
+@media screen and (min-width: 901px) {
+  #solutions .row {
+    display: flex;
+  }
+  #solutions .row.surveys, #solutions .row.praise {
+    flex-direction: row-reverse;
+  }
+  #solutions .row .screen img {
+    height: 380px;
+  }
+  #solutions .row .title {
+    width: 25%;
+  }
+  #solutions .row .title img {
+    padding: 40px 0;
+    width: 100%;
+  }
 }
 
 /* SEZIONE TEAMBIT */
@@ -222,17 +303,26 @@ section {
   background-color: #ffe6cf;
 }
 #teambit .container {
-  width: 40%;
-  margin: auto;
+  width: 100%;
   text-align: center;
 }
 #teambit .founders {
+  width: 450px;
+  margin: auto;
   background-color: white;
   border: 1px solid #1a4892;
   border-radius: 10px;
   text-align: left;
   margin-top: 50px;
   padding: 20px;
+  position: relative;
+}
+#teambit .founders i {
+  position: absolute;
+  top: -30px;
+  left: -10px;
+  font-size: 45px;
+  color: #1a4892;
 }
 #teambit .founders p {
   padding: 0;
@@ -261,14 +351,14 @@ footer .container {
 }
 footer .col {
   font-weight: bold;
-  flex-basis: calc(100% / 6);
+  padding-right: 30px;
 }
 footer .col:first-child {
   display: flex;
   padding-right: 40px;
 }
 footer .col:first-child img {
-  width: 140px;
+  width: 100px;
   margin-right: 20px;
   align-self: flex-start;
 }

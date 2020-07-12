@@ -3,19 +3,28 @@
   background-color: $secondary_color;
 
   .container {
-    width: 40%;
-    margin: auto;
+    width: 100%;
     text-align: center;
   }
 
   .founders {
+    width: 450px;
+    margin: auto;
     background-color: $primary_color;
     border: 1px solid $btn_color;
     border-radius: 10px;
     text-align: left;
     margin-top: 50px;
     padding: 20px;
+    position: relative;
 
+    i {
+      position: absolute;
+      top: -30px;
+      left: -10px;
+      font-size: 45px;
+      color: $btn_color;
+    }
 
     p {
       padding: 0;
